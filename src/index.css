@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ html,body{
+  @apply p-0 m-0 w-full
+ }
+
+  #root{
+    @apply h-full flex justify-center items-center  bg-bgColor mt-52 
+    sm:m-0 sm:flex-none sm:w-full 
+  }
+}
+
+@layer components {
+
+  .card {
+    @apply bg-bgColor shadow-xl w-[737px] h-[514px] flex justify-center items-center rounded-3xl p-0
+    sm:flex-col sm:h-full sm:w-full sm:mr-0
+  }
+
+  .card-left {
+    @apply bg-gradient-to-b  from-cardUpColor to-cardDownhColor flex justify-center items-center flex-col p-6 gap-12 rounded-3xl  h-full
+    sm:w-full sm:flex-none 
+  }
+
+  .card-banner {
+    @apply text-cardTextColor text-2xl flex flex-col justify-center items-center font-bold font-mono 
+  }
+  .banner-h {
+    @apply mt-16 mb-2
+  }
+  .card-banner span {
+    @apply w-52 h-52 bg-cardRadius rounded-full flex justify-center items-center flex-col text-bgColor mt-3 mb-0
+  }
+  .card-banner span h1{
+    @apply text-7xl
+  }
+  .card-banner span h3{
+    @apply text-xl
+  }
+  .card-banner h3{
+    @apply text-cardTextColor text-lg
+  }
+  .card-footer{
+    @apply flex flex-col justify-center items-center gap-5 mb-12 text-center   
+  }
+  .card-footer h1{
+    @apply text-bgColor text-4xl font-bold font-mono mt-[-1rem]
+  }
+  .card-footer h3{
+    @apply text-cardTextColor text-xl
+  }
+  .card-right{
+    @apply flex flex-col justify-center items-start  h-full 
+  }
+  .card-right h1{
+    @apply font-bold text-2xl font-sans text-sumry m-7 
+  }
+  .card-bar{
+    @apply flex  justify-between items-center  text-3xl gap-12 ml-12 h-14 w-72 rounded-xl m-2
+  }
+  .card-bar h2{
+    @apply flex items-center justify-center  m-3 gap-2 text-lg font-bold
+  }
+  .card-right button{
+    @apply bg-sumry text-bgColor w-72 h-16  rounded-full m-12 font-bold font-sans text-lg
+  }
+}
